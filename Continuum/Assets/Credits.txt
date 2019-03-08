@@ -1,0 +1,12 @@
+Continuum used content from these assets:
+
+- Font Inconsolata: https://fonts.google.com/specimen/Inconsolata
+- UI Space: https://www.kenney.nl/assets/ui-pack-space-expansion
+- On Screen Controls: https://www.kenney.nl/assets/onscreen-controls
+- Game Icons (Expansion): https://www.kenney.nl/assets/game-icons-expansion
+- Medals: https://www.kenney.nl/assets/medals
+- Emotes Pack: https://www.kenney.nl/assets/emotes-pack
+- Space Shooter Extension: https://www.kenney.nl/assets/space-shooter-extension
+- Dynamic Space Background Lite Free: https://dinvstudio.itch.io/dynamic-space-background-lite-free
+- DOS-88 Synthwave Music Library: https://dos88.itch.io/dos-88-music-library
+- Interface Bleeps: https://bleeoop.itch.io/interface-bleeps
