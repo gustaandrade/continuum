@@ -20,6 +20,8 @@ public class MenuController : MonoBehaviour
     public Slider MusicVolume;
     public Slider SFXVolume;
 
+    public AudioClip ClickClip;
+
     private void Awake()
     {
         StartButton.onClick.AddListener(() => OpenMenu("Start"));
@@ -30,6 +32,8 @@ public class MenuController : MonoBehaviour
 
     private void OpenMenu(string screenName)
     {
+        AudioController.Instance.PlayOneShotPlayerSFX(ClickClip);
+
         switch (screenName)
         {
             case "Start":
@@ -51,11 +55,15 @@ public class MenuController : MonoBehaviour
 
     public void CloseCurrentPanel(RectTransform rectTransform)
     {
+        AudioController.Instance.PlayOneShotPlayerSFX(ClickClip);
+
         rectTransform.DOScale(0f, 0.25f);
     }
 
     public void QuitApplication()
     {
+        AudioController.Instance.PlayOneShotPlayerSFX(ClickClip);
+
         Application.Quit();
     }
 
@@ -67,6 +75,8 @@ public class MenuController : MonoBehaviour
 
     public void LoadLevel(int level)
     {
+        AudioController.Instance.PlayOneShotPlayerSFX(ClickClip);
+
         SceneManager.LoadScene(level);
     }
 }
