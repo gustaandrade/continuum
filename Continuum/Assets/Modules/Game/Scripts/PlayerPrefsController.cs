@@ -9,6 +9,7 @@ public class PlayerPrefsController : MonoBehaviour
 
     public UnityEvent OnMusicVolumeChanged;
     public UnityEvent OnSFXVolumeChanged;
+    public UnityEvent OnScoreValueChanged;
 
     private void Awake()
     {
@@ -42,12 +43,13 @@ public class PlayerPrefsController : MonoBehaviour
 
     public float GetMaxScore()
     {
-        if (!PlayerPrefs.HasKey("Score")) return 1;
+        if (!PlayerPrefs.HasKey("Score")) return 0;
         return PlayerPrefs.GetFloat("Score");
     }
 
     public void SetMaxScore(float value)
     {
         PlayerPrefs.SetFloat("Score", value);
+        OnScoreValueChanged.Invoke();
     }
 }

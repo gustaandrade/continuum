@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public static EnemyController Instance;
 
     public GameObject EnemyBulletOrigin;
+    public AudioClip Clip;
 
     private float _cooldownCount;
     private float _positionX;
@@ -33,6 +34,7 @@ public class EnemyController : MonoBehaviour
 
     private void Shoot()
     {
+        AudioController.Instance.PlayOneShotEnemySFX(Clip);
         ShotController.Instance.SpawnFromPool("Enemy", EnemyBulletOrigin.transform.position, EnemyBulletOrigin.transform.rotation);
         _cooldownCount = 0f;
     }

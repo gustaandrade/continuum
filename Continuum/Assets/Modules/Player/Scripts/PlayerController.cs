@@ -5,9 +5,10 @@ public class PlayerController : WrapObject
     public static PlayerController Instance; 
 
     public GameObject PlayerBulletOrigin;
+    public AudioClip Shot;
+
     private GameVariables _gameVariables;
     private ShotController _shotController;
-
     private float _cooldownCount;
 
     private void Awake()
@@ -31,6 +32,7 @@ public class PlayerController : WrapObject
 
     private void Shoot()
     {
+        AudioController.Instance.PlayOneShotPlayerSFX(Shot);
         _shotController.SpawnFromPool("Player", PlayerBulletOrigin.transform.position, PlayerBulletOrigin.transform.rotation);
         _cooldownCount = 0f;
     }

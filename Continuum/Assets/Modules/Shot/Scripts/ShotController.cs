@@ -37,9 +37,9 @@ public class ShotController : MonoBehaviour
         nextShot.SetActive(true);
         nextShot.transform.position = position;
         nextShot.transform.rotation = rotation;
-        nextShot.GetComponent<IBulletObject>().OnBulletSpawned();
+        var pooledObject = nextShot.GetComponent<IBulletObject>();
+        pooledObject?.OnBulletSpawned();
 
-        nextShot.SetActive(false);
         ShotDictionary[type].Enqueue(nextShot);
 
         return nextShot;

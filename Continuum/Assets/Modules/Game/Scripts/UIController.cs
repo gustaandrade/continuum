@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,7 +14,6 @@ public class UIController : MonoBehaviour
     public Slider MusicVolume;
     public Slider SFXVolume;
     public RectTransform ConfigScreen;
-
     public Text Score;
 
     private void Awake()
@@ -21,6 +21,11 @@ public class UIController : MonoBehaviour
         PauseButton.onClick.AddListener(Pause);
         UnpauseButton.onClick.AddListener(Unpause);
         HomeButton.onClick.AddListener(GoToHome);
+        Score.text = PlayerPrefsController.Instance.GetMaxScore().ToString(CultureInfo.InvariantCulture);
+        PlayerPrefsController.Instance.OnScoreValueChanged.AddListener(() =>
+            {
+                Score.text = PlayerPrefsController.Instance.GetMaxScore().ToString(CultureInfo.InvariantCulture);
+            });
     }
 
     public void Pause()

@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseButton: {fileID: 4786984024803596058}
   UnpauseButton: {fileID: 483247997504334886}
-  HomeButton: {fileID: 0}
+  HomeButton: {fileID: 8733401357980478129}
   MusicVolume: {fileID: 170272647272362149}
   SFXVolume: {fileID: 8260917132010594690}
   ConfigScreen: {fileID: 7485985168276499197}
@@ -114,7 +114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1794583819470627676
 RectTransform:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &217863300253578286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -593,7 +593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4360234801944274621
 RectTransform:
   m_ObjectHideFlags: 0
@@ -983,16 +983,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -57
       objectReference: {fileID: 0}
-    - target: {fileID: 5708920355496465931, guid: 4766e2960e59a714ab217b61dd761c82,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7586761195152179415, guid: 4766e2960e59a714ab217b61dd761c82,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1670460906602417816, guid: 4766e2960e59a714ab217b61dd761c82,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1024,6 +1014,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3689880628375505760, guid: 4766e2960e59a714ab217b61dd761c82,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708920355496465931, guid: 4766e2960e59a714ab217b61dd761c82,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586761195152179415, guid: 4766e2960e59a714ab217b61dd761c82,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -58,10 +58,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerMovementSpeed: 3
-  PlayerShotSpeed: 500
+  PlayerShotSpeed: 10
   PlayerShotCooldown: 25
   PlayerScreenWrapOffset: 0.025
   EnemyShipMovementSpeed: 5
-  EnemyShipShotSpeed: 900
+  EnemyShipShotSpeed: 8
   EnemyShipShotCooldown: 15
   EnemyRockMovementSpeed: 7
