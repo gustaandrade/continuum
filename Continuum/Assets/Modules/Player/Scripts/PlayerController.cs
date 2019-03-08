@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : WrapObject
 {
@@ -53,5 +54,13 @@ public class PlayerController : WrapObject
 
         var rotZ = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ - 90);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("EnemyShot") || collider.CompareTag("EnemyRock") || collider.CompareTag("EnemyShip"))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
