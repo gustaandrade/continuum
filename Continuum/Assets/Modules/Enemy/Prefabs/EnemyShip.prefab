@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1066725740597098432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1066725740768998323}
   m_RootOrder: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c4c5d694aebb2e342a8553beee38b3b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec56bbcebb5a1cc468dbd9ce1e6fcb56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -91,12 +91,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.555
+  m_Radius: 1
 --- !u!50 &6362855154514282024
 Rigidbody2D:
   serializedVersion: 4
@@ -128,10 +128,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1066725740768998323}
   - component: {fileID: 5088783488569385126}
-  - component: {fileID: 255299881783371521}
+  - component: {fileID: 4683117345136233233}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
+  m_Name: EnemyShip
+  m_TagString: EnemyShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,8 +143,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066725740768998322}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9979694, w: 0.06369552}
+  m_LocalPosition: {x: 0, y: -3.6481743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1066725740597098433}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223f7288e71ea4f49b43eedc58f5afd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &255299881783371521
+--- !u!114 &4683117345136233233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,10 +173,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1066725740768998322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d4e0e8d173ca14bb8449d37cd787dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2259990a58ad46c4dbc9b362a80b04a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerBulletOrigin: {fileID: 5153327764778351259}
+  EnemyBulletOrigin: {fileID: 5153327764778351259}
 --- !u!1 &5153327764778351259
 GameObject:
   m_ObjectHideFlags: 0

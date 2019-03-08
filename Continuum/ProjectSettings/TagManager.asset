@@ -7,6 +7,12 @@ TagManager:
   - Enemy
   - PlayerShot
   - EnemyShot
+  - Up
+  - Down
+  - Left
+  - Right
+  - EnemyShip
+  - EnemyRock
   layers:
   - Default
   - TransparentFX

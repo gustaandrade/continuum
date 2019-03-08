@@ -12,10 +12,11 @@ public class GameVariables : MonoBehaviour
     public float PlayerShotCooldown;
     public float PlayerScreenWrapOffset;
 
-    [Space(5)]
     [Header("Enemy")]
-    public float EnemyMovementSpeed;
-    public float EnemyShotSpeed;
+    public float EnemyShipMovementSpeed;
+    public float EnemyShipShotSpeed;
+    public float EnemyShipShotCooldown;
+    public float EnemyRockMovementSpeed;
 
     public void Awake()
     {

@@ -17,6 +17,6 @@ public class Bullet : MonoBehaviour, IBulletObject
         if (gameObject.CompareTag("PlayerShot"))
             _rigidbody.AddForce(_playerController.gameObject.transform.up * _gameVariables.PlayerShotSpeed);
         else if (gameObject.CompareTag("EnemyShot"))
-            _rigidbody.AddForce(_enemyController.gameObject.transform.up * _gameVariables.EnemyShotSpeed);
+            _rigidbody.AddForce(_enemyController.gameObject.transform.up * _gameVariables.EnemyShipShotSpeed);
     }
 }

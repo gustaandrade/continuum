@@ -23,9 +23,9 @@ public class PlayerController : WrapObject
     {
         Move();
         LookAtMouse();
+
         if (Input.GetMouseButton(0) && _cooldownCount > _gameVariables.PlayerShotCooldown)
             Shoot();
-
         _cooldownCount++;
     }
 
